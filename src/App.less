@@ -1,0 +1,96 @@
+body, ul, li, ol, p, span, i, cite, em, input, img, textarea, button, iframe, div, section, article, footer, header, aside, nav, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  -webkit-text-size-adjust: none;
+}
+
+i, address, em, cite {
+  font-style: normal;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+body {
+  font-family: PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  word-break: break-word;
+  max-width: 750px; /*no*/
+  margin: 0 auto;
+  &.modal-open {
+      position: fixed;
+      top: 0; right: 0; bottom: 0; left: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #121212;
+}
+
+input, select, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input:focus, textarea:focus, button {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+input[type="search"]::-webkit-search-cancel-button{
+  display: none;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+  overflow: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+
+.baseShade-enter-active, .baseShade-leave-active {
+  transition: opacity .5s;
+}
+
+.baseShade-enter, .baseShade-leave-active {
+  opacity: 0;
+}
+
+.ellipsis {
+  line-height: 1.05em; //为了防止文字被裁切
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.line-clamp(@clamp: 2) {
+  line-height: 1.175em; // 还是为了文字被裁切，行高最少 1.175em
+  -webkit-line-clamp: @clamp;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  display: box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+}

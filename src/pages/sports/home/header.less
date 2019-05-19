@@ -1,0 +1,70 @@
+@height: 46px;
+
+.homeHeader {
+    position: relative;
+    height: @height;
+    box-sizing: border-box;
+    background: linear-gradient(80deg, #f9cf35, #febe20);
+    color: #121212;
+    border-bottom: 1px solid #f8b82e;
+
+    /*no*/
+    .back-home {
+        position: relative;
+        float: left;
+        height: @height;
+        width: 77px;
+        border-right: 1px solid #f5b915;
+
+        /*no*/
+        .ico {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            margin-top: -6px;
+            font-size: 12px;
+        }
+
+        .logo {
+            position: absolute;
+            left: 28px;
+            top: 50%;
+            margin-top: -9px;
+            height: 18px;
+        }
+    }
+
+    .label {
+        float: left;
+        line-height: @height;
+        font-size: 17px;
+        padding-left: 10px;
+        font-weight: bold;
+        border-left: 1px solid #fdd037;
+    }
+
+    .right-promotion {
+        position: relative;
+        float: right;
+        height: 46px;
+
+        .icon {
+            float: left;
+            margin-top: 11px;
+            width: 21px;
+            height: 21px;
+            background: url('../../../assets/images/sohu_tv_icon.png') no-repeat center center;
+            background-size: contain;
+        }
+
+        .txt {
+            .ellipsis;
+            float: left;
+            padding-left: 3px;
+            padding-right: 13px;
+            font-size: 15px;
+            line-height: 46px;
+            max-width: 6.5em;
+        }
+    }
+}
