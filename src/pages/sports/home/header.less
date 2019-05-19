@@ -58,7 +58,10 @@
         }
 
         .txt {
-            .ellipsis;
+            line-height: 1.05em; //为了防止文字被裁切
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
             float: left;
             padding-left: 3px;
             padding-right: 13px;
