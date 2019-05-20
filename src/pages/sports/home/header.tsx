@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../../../assets/images/t-logo.png';
 import './header.less';
 
-const HomeHeader: React.FC = () => {
+export const HomeHeader = () => {
     return (
         <header className="homeHeader" data-spm="header">
             <a href="//m.sohu.com">
@@ -20,6 +20,4 @@ const HomeHeader: React.FC = () => {
             </a>
         </header>
     );
-}
-
-export default HomeHeader;
+};
